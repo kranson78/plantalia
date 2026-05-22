@@ -1,14 +1,6 @@
 [build]
-  # public/_redirects jest kopiowany do dist przez Expo (folder public/)
-  command = "npx expo export -p web"
+  command = "npx expo export --platform web"
   publish = "dist"
 
 [functions]
   directory = "netlify/functions"
-
-[edge_functions]
-  directory = "netlify/edge-functions"
-
-[[edge_functions]]
-  function = "analyze"
-  path = "/.netlify/edge-functions/analyze"
