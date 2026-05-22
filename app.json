@@ -5,15 +5,19 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#080f08"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Plantalia potrzebuje aparatu do fotografowania roślin.",
+        "NSPhotoLibraryUsageDescription": "Plantalia potrzebuje galerii do wyboru zdjęć roślin."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +29,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Plantalia potrzebuje dostępu do galerii.",
+          "cameraPermission": "Plantalia potrzebuje dostępu do aparatu."
+        }
+      ]
+    ]
   }
 }

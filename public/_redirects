@@ -1,0 +1,3 @@
+# Plantalia — routing API analizy (frontend: lib/anthropic.ts → /.netlify/functions/analyze)
+# Logika Anthropic API: netlify/edge-functions/analyze.ts (Edge Function, Deno)
+/.netlify/functions/analyze    /.netlify/edge-functions/analyze    200!
